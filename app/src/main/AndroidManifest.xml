@@ -21,9 +21,11 @@
             android:name=".homeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".signUpActivity"></activity>
+        <activity android:name=".signUpActivity" />
         <activity android:name=".loginActivity" />
-        <activity android:name=".profileActivity"></activity>
+        <activity android:name=".profileActivity" />
+        <activity android:name=".emergencyActivity" />
+        <activity android:name=".emergencyContactActivity"></activity>
     </application>
 
 </manifest>
