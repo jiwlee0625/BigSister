@@ -8,6 +8,7 @@
     tools:context="com.android.bigsister.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="B i g  S i s t e r"
@@ -23,8 +24,15 @@
         android:id="@+id/imageView"
         android:layout_width="236dp"
         android:layout_height="442dp"
-        app:srcCompat="@drawable/sister"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="34dp" />
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238"
+        app:srcCompat="@drawable/sister" />
 
 </android.support.constraint.ConstraintLayout>
