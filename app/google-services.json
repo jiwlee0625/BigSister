@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "901831614759",
+    "firebase_url": "https://bigsister-6026f.firebaseio.com",
+    "project_id": "bigsister-6026f",
+    "storage_bucket": "bigsister-6026f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901831614759:android:8c30a2e6cd38c14e",
+        "android_client_info": {
+          "package_name": "com.android.bigsister"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901831614759-pv60bja4dt16au0piepbv1d56eft4b17.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.bigsister",
+            "certificate_hash": "59febbfed7657916ccd8018a54348f03086a0b1f"
+          }
+        },
+        {
+          "client_id": "901831614759-b6us65ogp0khsn8r387s9358li9qau35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDxtWxiQM0fVED936TheW_BZaPYs1Kyf4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901831614759-b6us65ogp0khsn8r387s9358li9qau35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
