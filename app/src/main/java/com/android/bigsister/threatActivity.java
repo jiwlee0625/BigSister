@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.view.MotionEvent;
 import com.google.firebase.database.*;
 
+import java.util.Timer;
+
 public class threatActivity extends AppCompatActivity {
     private boolean underThreat = false;
     private DatabaseReference mDatabase;
@@ -25,7 +27,7 @@ public class threatActivity extends AppCompatActivity {
         threatButton.setOnTouchListener(new OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-
+                return true;
             }
         });
         //Ji won lee needs help! Location is ______________________________
