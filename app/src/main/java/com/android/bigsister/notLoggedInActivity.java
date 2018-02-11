@@ -17,7 +17,6 @@ public class notLoggedInActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("Button clicked!");
                 Intent loginActivityIntent = new Intent(getApplicationContext(), loginActivity.class);
                 startActivity(loginActivityIntent);
             }

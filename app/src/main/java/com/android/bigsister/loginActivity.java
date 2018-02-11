@@ -1,16 +1,48 @@
 package com.android.bigsister;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class loginActivity extends AppCompatActivity {
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        System.out.println("On create of loginactivity");
         super.onCreate(savedInstanceState);
-        System.out.println("After super create");
         setContentView(R.layout.activity_login);
-        System.out.println("After layout");
+        mAuth = FirebaseAuth.getInstance();
+        Button loginButton = (Button) findViewById(R.id.loginButton);
+        EditText emailInput = (EditText)findViewById(R.id.emailInput);
+        EditText pwInput = (EditText)findViewById(R.id.pwInput);
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = emailInput.getText().toString();
+                String password = pwInput.getText().toString();
+                mAuth.signInWithEmailAndPassword(email, password)
+                        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    // Sign in success, update UI with the signed-in user's information
+                                    FirebaseUser user = mAuth.getCurrentUser();
+                                    Intent homeActivityIntent = new Intent(getApplicationContext(), homeActivity.class);
+                                    startActivity(homeActivityIntent);
+                                } else {
+                                    // If sign in fails, display a message to the user.
+                                    emailInput.setText("");
+                                    pwInput.setText("");
+                                }
+                            }
+                        });
+                //Intent loginActivityIntent = new Intent(getApplicationContext(), loginActivity.class);
+                //startActivity(loginActivityIntent);
+            }
+        });
     }
 }
