@@ -20,6 +20,7 @@
         <activity
             android:name=".homeActivity"
             android:label="@string/title_activity_home"
+<<<<<<< HEAD
             android:theme="@style/AppTheme.NoActionBar" />
 <<<<<<< HEAD
         <activity android:name=".signUpActivity"></activity>
@@ -27,6 +28,9 @@
         <activity android:name=".loginActivity" />
         <activity android:name=".profileActivity"></activity>
 >>>>>>> 877c2a00c81bf4ce231d562b5faeb9b39e14f518
+=======
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+>>>>>>> parent of 877c2a0... manifest
     </application>
 
 </manifest>
