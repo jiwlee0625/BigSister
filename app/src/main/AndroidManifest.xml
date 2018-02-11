@@ -25,7 +25,8 @@
         <activity android:name=".loginActivity" />
         <activity android:name=".profileActivity" />
         <activity android:name=".emergencyActivity" />
-        <activity android:name=".emergencyContactActivity"></activity>
+        <activity android:name=".emergencyContactActivity" />
+        <activity android:name=".threatActivity"></activity>
     </application>
 
 </manifest>
