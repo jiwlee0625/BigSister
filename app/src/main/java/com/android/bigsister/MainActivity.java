@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         if (currentUser == null) {
             //if not logged in
             //move to login activity
-            Intent notLoggedInActivityIntent = new Intent(getApplicationContext(), notLoggedInActivity.class)
+            Intent notLoggedInActivityIntent = new Intent(getApplicationContext(), notLoggedInActivity.class);
             startActivity(notLoggedInActivityIntent);
         }
     }
